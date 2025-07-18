@@ -1,0 +1,11 @@
+.banner-img {
+    height: 500px;
+    background-image: url(https://cdn.pixabay.com/photo/2023/05/11/16/25/hall-7986771_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section {
+    min-height: 500px;
+    align-content: center;
+}

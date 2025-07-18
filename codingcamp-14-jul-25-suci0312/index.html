@@ -1,13 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bismillah Succes</title>
+
+  <!-- CSS External Link -->
+    <link rel="stylesheet" href="styles.css">
+
+  <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
+    <!-- Header Content with Tailwind CSS -->
+    <header class="flex justify-between items-center p-[8px] bg-gray-250">
+        
+    <!-- Logo Icon -->
+        <div class="h-16 w-16 bg-[url(https://cdn.pixabay.com/photo/2022/03/07/10/47/bird-7053394_1280.jpg)] rounded-full bg-center bg-cover"></div>
+ <nav class="flex gap-2">
+      <a href="#home-page" class="border px-4 py-2 rounded">Home</a>
+      <a href="#our-profile" class="border px-4 py-2 rounded">Our Profile</a>
+      <a href="#message-us" class="border px-4 py-2 rounded">Message Us</a>
+    </nav>
+  </header>
+
+ <!-- Main Content -->
+    <main>
+        <!-- Home Content -->
+        <section id="home-page">
+            <header>
+                <h1 class="text-2xl font-bold text-center my-4">Welcome <span id="welcome-user">[User]</span> to Our
+                    Website
+                </h1>
+            </header>
+
+            <div>
+                <p class="text-center">This is the home page content. Here you can find various information about our
+                    services.</p>
     
+                <div class="banner-img">
+                <img src="https://cdn.pixabay.com/photo/2023/05/11/16/25/hall-7986771_1280.jpg" alt="Banner" class="w-full h-200 object-cover rounded-lg">
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+        <!-- Our Profile Content -->
+        <section id="our-profile">
+            <header>
+                <h2 class="text-xl font-semibold text-center my-4">Our Profile</h2>
+            </header>
+
+            <article>
+                <p class="text-center">We are a team of aspiring developers and digital enthusiasts, dedicated to learning, growing, and building impactful solutions. Our mission is to turn ideas into action, guided by a vision of continuous innovation and values rooted in teamwork, integrity, and excellence.</p>
+            </article>
+        </section>
+
+        <hr />
+
+        <!-- Message Us -->
+    <section id="message-us" class="py-8">
+      <h2 class="text-xl font-semibold mb-8">Message Us</h2>
+      <div class="flex flex-col md:flex-row gap-8">
+        <!-- Form -->
+        <form id="message-form" class="flex-1 bg-white p-6 rounded border">
+          <div class="mb-4">
+            <label for="name-input" class="block mb-1">Name :</label>
+            <input type="text" id="name-input" name="name" class="border rounded w-full p-2" required>
+          </div>
+          <div class="mb-4">
+            <label for="dob-input" class="block mb-1">Date of Birth :</label>
+            <input type="date" id="dob-input" name="dob" class="border rounded w-full p-2" required>
+          </div>
+          <div class="mb-4">
+            <label class="block mb-1">Gender :</label>
+            <label class="mr-4"><input type="radio" name="gender" value="Laki-Laki" required> Male</label>
+            <label><input type="radio" name="gender" value="Perempuan"> Female</label>
+          </div>
+          <div class="mb-4">
+            <label for="message-input" class="block mb-1">Message :</label>
+            <textarea id="message-input" name="message" class="border rounded w-full p-2" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-gray-300 py-2 rounded hover:bg-gray-400">Submit</button>
+        </form>
+        <!-- Output -->
+        <div class="flex-1 bg-white p-6 rounded border">
+          <div id="message-output" class="text-sm">
+            <div><b>Current time :</b> <span id="current-time"></span></div>
+            <div class="mt-4"><b>Name :</b> <span id="output-name"></span></div>
+            <div><b>Date of Birth :</b> <span id="output-dob"></span></div>
+            <div><b>Gender :</b> <span id="output-gender"></span></div>
+            <div><b>Message :</b> <span id="output-message"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-right text-gray-600 py-4 px-8 border-t">
+    Created By SuciRa
+  </footer>
+
+    <!-- Footer Content -->
+    <footer>
+        <p class="text-center text-gray-600 py-4">© 2025 Bismillah Succes. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript External Link -->
+   <script src="script.js"></script>
 </body>
+
 </html>
